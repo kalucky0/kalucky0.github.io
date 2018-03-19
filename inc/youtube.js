@@ -8,3 +8,13 @@
     messagingSenderId: "805444506237"
   };
   firebase.initializeApp(config);
+
+var database = firebase.database();
+
+writeVideoURL(location.href);
+
+function writeVideoURL(url) {
+  firebase.database().ref('youtube').set({
+    url: url
+  });
+}
