@@ -306,36 +306,40 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .photoshop {
-  	width: 20%;
-  	-moz-animation: photoshop 2s ease;
-  	-webkit-animation: photoshop 2s ease;
+  	width: 15%;
+  	/* -moz-animation: photoshop 2s ease; */
+  	/* -webkit-animation: photoshop 2s ease; */
 }
 .csharp {
   	width: 85%;
-  	-moz-animation: csharp 2s ease;
-  	-webkit-animation: csharp 2s ease;
+  	/* -moz-animation: csharp 2s ease;
+  	-webkit-animation: csharp 2s ease; */
 }
 .unity {
-  	width: 90%;
-  	-moz-animation: unity 2s ease;
-  	-webkit-animation: unity 2s ease;
+  	width: 80%;
+  	/* -moz-animation: unity 2s ease;
+  	-webkit-animation: unity 2s ease; */
 }
 .css {
   	width: 90%;
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
+  	/* -moz-animation: css 2s ease;
+  	-webkit-animation: css 2s ease; */
 }
-.html5 {
-  	width: 98%;
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
+.html {
+  	width: 95%;
+  	/* -moz-animation: html 2s ease;
+  	-webkit-animation: html 2s ease; */
 }
-.jquery {
-  	width: 15%;
-  	-moz-animation: jquery 2s ease;
-  	-webkit-animation: jquery 2s ease;
+.js {
+  	width: 80%;
+  	/* -moz-animation: jquery 2s ease;
+  	-webkit-animation: jquery 2s ease; */
 }
 
+.php {
+   width: 60%;
+}
+/* 
 @-moz-keyframes photoshop {
   0%   { width: 0px;  }
   100% { width: 20%;  }
@@ -352,11 +356,11 @@ ul#nav li.current a { color: #F06000; }
   0%   { width: 0px;  }
   100% { width: 90%;  }
 }
-@-moz-keyframes html5 {
+@-moz-keyframes html {
   0%   { width: 0px;  }
   100% { width: 98%;  }
 }
-@-moz-keyframes jquery {
+@-moz-keyframes js {
   0%   { width: 0px;  }
   100% { width: 15%;  }
 }
@@ -384,7 +388,7 @@ ul#nav li.current a { color: #F06000; }
 @-webkit-keyframes jquery {
   0%   { width: 0px;  }
   100% { width: 15%;  }
-}
+} */
 
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
@@ -838,7 +842,7 @@ call-to-action .button {
 	color: #fff;
 	background-color: #11ABB0;
 }
-#contact button.submit {
+#contact .submit {
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	color:#fff;
@@ -849,8 +853,9 @@ call-to-action .button {
    display: inline-block;
 	border-radius: 3px;
    margin-left: 26%;
+   width: auto;
 }
-#contact button.submit:hover {
+#contact .submit:hover {
 	color: #0D0D0D;
 	background: #fff;
 }
