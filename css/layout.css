@@ -18,6 +18,11 @@ header {
 	-webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
+   background-attachment: fixed;
+}
+
+.social a img:hover {
+   filter: invert(55%) sepia(33%) saturate(3858%) hue-rotate(144deg) brightness(93%) contrast(87%);
 }
 
 /* vertically center banner section */
@@ -338,6 +343,12 @@ ul#nav li.current a { color: #F06000; }
 
 .php {
    width: 60%;
+}
+.java {
+   width: 70%;
+}
+.photograpgy {
+   width: 50%;
 }
 /* 
 @-moz-keyframes photoshop {
@@ -989,3 +1000,19 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 #go-top a:hover { background-color: #0F9095; }
 
+.description-box {
+   position: relative;
+}
+
+.shadow {
+   position: absolute;
+   top: -15px;
+   left: 0px;
+   right: 0px;
+   height: 6px;
+   opacity: .4;
+   background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+   background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+   background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
