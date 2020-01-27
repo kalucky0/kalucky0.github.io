@@ -277,14 +277,13 @@ ul#nav li.current a { color: #F06000; }
 	text-align: left;
 }
 .bars .skills {
-  	margin-top: 36px;
-   list-style: none;
+  	margin-top: -5px;
+   list-style: disc;
+   position: relative;
+   left: 17px;
 }
 .bars li {
    position: relative;
-  	margin-bottom: 60px;
-  	background: #ccc;
-  	height: 42px;
   	border-radius: 3px;
 }
 .bars li em {
@@ -293,8 +292,6 @@ ul#nav li.current a { color: #F06000; }
 	text-transform: uppercase;
    letter-spacing: 2px;
 	font-weight: normal;
-   position: relative;
-	top: -36px;
 }
 .bar-expand {
    position: absolute;
@@ -309,97 +306,6 @@ ul#nav li.current a { color: #F06000; }
    line-height: 42px;
    border-radius: 3px 0 0 3px;
 }
-
-.photoshop {
-  	width: 15%;
-  	/* -moz-animation: photoshop 2s ease; */
-  	/* -webkit-animation: photoshop 2s ease; */
-}
-.csharp {
-  	width: 85%;
-  	/* -moz-animation: csharp 2s ease;
-  	-webkit-animation: csharp 2s ease; */
-}
-.unity {
-  	width: 80%;
-  	/* -moz-animation: unity 2s ease;
-  	-webkit-animation: unity 2s ease; */
-}
-.css {
-  	width: 90%;
-  	/* -moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease; */
-}
-.html {
-  	width: 95%;
-  	/* -moz-animation: html 2s ease;
-  	-webkit-animation: html 2s ease; */
-}
-.javascript {
-  	width: 80%;
-  	/* -moz-animation: jquery 2s ease;
-  	-webkit-animation: jquery 2s ease; */
-}
-
-.php {
-   width: 60%;
-}
-.java {
-   width: 70%;
-}
-.photograpgy {
-   width: 50%;
-}
-/* 
-@-moz-keyframes photoshop {
-  0%   { width: 0px;  }
-  100% { width: 20%;  }
-}
-@-moz-keyframes unity {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-moz-keyframes csharp {
-  0%   { width: 0px;  }
-  100% { width: 85%;  }
-}
-@-moz-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-moz-keyframes html {
-  0%   { width: 0px;  }
-  100% { width: 98%;  }
-}
-@-moz-keyframes js {
-  0%   { width: 0px;  }
-  100% { width: 15%;  }
-}
-
-@-webkit-keyframes photoshop {
-  0%   { width: 0px;  }
-  100% { width: 20%;  }
-}
-@-webkit-keyframes unity {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-webkit-keyframes csharp {
-  0%   { width: 0px;  }
-  100% { width: 85%;  }
-}
-@-webkit-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-webkit-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 98%;  }
-}
-@-webkit-keyframes jquery {
-  0%   { width: 0px;  }
-  100% { width: 15%;  }
-} */
 
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
@@ -526,7 +432,8 @@ ul#nav li.current a { color: #F06000; }
 }
 .popup-modal .description-box .categories {
    font: 11px/21px 'opensans-light', sans-serif;
-   color: #A1A1A1;
+   color: #000;
+   font-weight: bold;   
    text-transform: uppercase;
    letter-spacing: 2px;
    display: block;
