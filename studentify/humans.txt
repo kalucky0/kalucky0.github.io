@@ -1,6 +1,0 @@
-/* Thanks zurb.com */
-/* humanstxt.org */
-
-/* SITE */
-Standards: HTML5, CSS3, Javascript
-Software: Studentify
