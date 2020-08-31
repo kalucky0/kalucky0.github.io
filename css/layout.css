@@ -267,12 +267,11 @@ ul#nav li.current a { color: #F06000; }
 }
 
 /*----------------------------------------------*/
-/*	Skill Bars
+/*	Skill section
 /*----------------------------------------------*/
 
 .bars {
 	width: 95%;
-	float: left;
 	padding: 0;
 	text-align: left;
 }
@@ -293,18 +292,15 @@ ul#nav li.current a { color: #F06000; }
    letter-spacing: 2px;
 	font-weight: normal;
 }
-.bar-expand {
-   position: absolute;
-   left: 0;
-   top: 0;
 
-   margin: 0;
-   padding-right: 24px;
-  	background: #313131;
-   display: inline-block;
-  	height: 42px;
-   line-height: 42px;
-   border-radius: 3px 0 0 3px;
+.skills ul {
+   list-style-type: none;
+}
+
+.skills li li::before {
+   position: absolute;
+   content: '-';
+   left: -10px;
 }
 
 /* ------------------------------------------------------------------ */
