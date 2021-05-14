@@ -79,8 +79,8 @@ header .social li {
    margin: 0 15px;
    padding: 0;
 }
-header .social li a { color: #fff; }
-header .social li a:hover { color: #11ABB0; }
+header .social li svg { fill:#fff; height: 28px;position: relative;top: 3px; }
+header .social li svg:hover { fill: #11ABB0; }
 
 /* scrolldown link */
 header .scrolldown a {
@@ -356,11 +356,11 @@ ul#nav li.current a { color: #F06000; }
 	-o-transition: opacity 0.3s ease-in-out;
 	transition: opacity 0.3s ease-in-out;
 
-   background: url(../images/overlay-bg.png) repeat;
+   background: rgba(0, 0, 0, 0.7);
 }
 .portfolio-item .item-wrap .link-icon {
    display: block;
-   color: #fff;
+   fill: #fff;
    height: 30px;
    width: 30px;
    font-size: 18px;
@@ -435,9 +435,7 @@ ul#nav li.current a { color: #F06000; }
    display: block;
    text-align: left;
 }
-.popup-modal .description-box .categories i {
-   margin-right: 8px;
-}
+
 .popup-modal .link-box {
    padding: 18px 36px;
    background: #111;
@@ -484,23 +482,11 @@ ul#nav li.current a { color: #F06000; }
    padding-top: 66px;
    padding-bottom: 48px;
 }
-#call-to-action h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 3px;
-   color: #fff;
+#call-to-action h1 svg {
+   height: 100px;
+   width: 100px;
 }
-#call-to-action h1 span { display: none; }
-#call-to-action .header-col h1:before {
-   font-family: 'FontAwesome';
-   content: "\f09b";
-	padding-right: 10px;
-	font-size: 72px;
-   line-height: 72px;
-   text-align: left;
-   float: left;
-   color: #fff;
-}
+
 #call-to-action .action {
    margin-top: 12px;
 }
@@ -832,8 +818,11 @@ footer {
    position: relative;
 }
 
-footer a, footer a:visited { color: #525252; }
-footer a:hover, footer a:focus { color: #fff; }
+footer svg {
+   fill: #525252;
+   height: 28px;
+}
+footer svg:hover, footer svg:focus { fill: #fff; }
 
 /* copyright */
 footer .copyright {
@@ -898,10 +887,15 @@ footer .social-links li:first-child { margin-left: 0; }
 
    color: #fff;
    font-size: 21px;
-   line-height: 60px;
+   line-height: 68px;
  	border-radius: 100%;
 }
 #go-top a:hover { background-color: #0F9095; }
+
+#go-top a svg {
+   height: 23px;
+   width: 23px;
+}
 
 .description-box {
    position: relative;

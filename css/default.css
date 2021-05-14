@@ -1,10 +1,8 @@
 /* ------------------------------------------------------------------ */
-/* a. Webfonts and Icon fonts
+/* a. Webfonts
  ------------------------------------------------------------------ */
 
 @import url("fonts.css");
-@import url("fontello/css/fontello.css");
-@import url("font-awesome/css/font-awesome.min.css");
 
 /* ------------------------------------------------------------------
 /* b. Reset
