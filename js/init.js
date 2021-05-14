@@ -1,4 +1,3 @@
-
 jQuery(document).ready(function ($) {
     // Smooth Scrolling
     $('.smoothscroll').on('click', function (e) {
@@ -8,29 +7,25 @@ jQuery(document).ready(function ($) {
             $target = $(target);
 
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
+            'scrollTop': $target.offset().top - 10
         }, 800, 'swing', function () {
             window.location.hash = target;
         });
     });
 
     // Highlight the current section in the navigation bar
-    const sections = $("section");
+    const sections = $("section, header");
     const navigation_links = $("#nav-wrap a");
 
-    sections.waypoint({
-        handler: function (event, direction) {
-            let active_section;
-
-            active_section = $(this);
-            if (direction === "up") active_section = active_section.prev();
-
-            const active_link = $('#nav-wrap a[href="#' + active_section.attr("id") + '"]');
-
-            navigation_links.parent().removeClass("current");
-            active_link.parent().addClass("current");
-        },
-        offset: '35%'
+    $(window).scroll(function () {
+        for(const elem of sections) {
+            const pos = $(elem).offset().top - $(window).scrollTop();
+            if(pos > -10 && pos < 250) {
+                const active_link = $('#nav-wrap a[href="#' + elem.id + '"]');
+                navigation_links.parent().removeClass("current");
+                active_link.parent().addClass("current");
+            }
+        }
     });
 
     //	Make sure that #header-background-image height is
