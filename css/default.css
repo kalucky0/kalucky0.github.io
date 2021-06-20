@@ -1,6 +1,4 @@
-@import url(fonts.css);
-
-b, body, code, em, h5, h6, html, kbd, pre, samp, small, strong {
+.pull-quote blockquote, b, body, code, em, h5, h6, html, kbd, p img, pre, samp, small, strong {
     margin: 0
 }
 
@@ -57,7 +55,7 @@ blockquote, q {
     quotes: "&#8220;" "&#8220;"
 }
 
-blockquote:after, q:after, q:before {
+.pull-quote blockquote:before, blockquote:after, q:after, q:before {
     content: none
 }
 
@@ -96,7 +94,6 @@ table {
 }
 
 body, html {
-    font-size: 62.5%;
     -webkit-font-smoothing: antialiased
 }
 
@@ -106,8 +103,12 @@ body {
     font-weight: 400;
     font-size: 15px;
     line-height: 30px;
-    color: #838c95;
+    color: #6e7881;
     -webkit-text-size-adjust: 100%
+}
+
+html {
+    font-size: 62.5%
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -120,7 +121,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     font-weight: inherit
 }
 
-h1, h3, h4 {
+h1, h3 {
     margin: 0 0 12px
 }
 
@@ -135,8 +136,11 @@ h2 {
     line-height: 36px
 }
 
-h3, h4 {
-    font-size: 22px;
+h3 {
+    font-size: 22px
+}
+
+h3, h4, h5, h6 {
     line-height: 30px
 }
 
@@ -148,9 +152,15 @@ h4 {
     font-size: 20px
 }
 
-blockquote p, h5, h6 {
+blockquote p {
     font-size: 18px;
-    line-height: 30px
+    font-family: 'librebaskerville-italic', serif;
+    padding: 0;
+    line-height: 36px
+}
+
+h5, h6 {
+    font-size: 18px
 }
 
 h6 {
@@ -159,10 +169,6 @@ h6 {
 
 p {
     margin: 0 0 30px
-}
-
-.pull-quote blockquote, p img {
-    margin: 0
 }
 
 p.lead {
@@ -201,12 +207,6 @@ blockquote:before {
     left: 0
 }
 
-blockquote p {
-    font-family: 'librebaskerville-italic', serif;
-    padding: 0;
-    line-height: 36px
-}
-
 blockquote cite {
     display: block;
     font-size: 12px;
@@ -233,7 +233,7 @@ blockquote cite a, blockquote cite a:visited {
     opacity: .45;
     position: absolute;
     font-size: 80px;
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif
 }
 
 .pull-quote:before {
@@ -246,10 +246,6 @@ blockquote cite a, blockquote cite a:visited {
     content: '\201D';
     bottom: -33px;
     right: 0
-}
-
-.pull-quote blockquote:before {
-    content: none
 }
 
 .drop-cap:first-letter, abbr {

@@ -195,7 +195,7 @@ ul#nav li.current a {
 
 #about p {
     line-height: 30px;
-    color: #7a7a7a
+    color: #949494
 }
 
 #about .profile-pic {
@@ -339,7 +339,7 @@ ul#nav li.current a {
     font: 15px/24px 'opensans-semibold', sans-serif;
     text-align: center;
     margin-bottom: 48px;
-    color: #95a3a3
+    color: #5f6d6d
 }
 
 #portfolio-wrapper .columns {
@@ -425,6 +425,10 @@ ul#nav li.current a {
     background: #fff;
     position: relative;
     margin: 0 auto
+}
+
+.popup-modal img {
+    width: 100%;
 }
 
 .popup-modal .description-box {

@@ -176,7 +176,7 @@
     }
 
     #about .profile-pic, header .scrolldown {
-        display: none
+        display: none !important;
     }
 
     #about .download .button {

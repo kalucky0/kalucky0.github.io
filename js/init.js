@@ -1,4 +1,7 @@
 jQuery(document).ready(function ($) {
+    // Image lazy loading
+    $('.lazy').Lazy();
+
     // Smooth Scrolling
     $('.smoothscroll').on('click', function (e) {
         e.preventDefault();
